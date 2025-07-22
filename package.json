@@ -1,0 +1,36 @@
+{
+  "name": "reversion",
+  "version": "1.0.0",
+  "description": "A simple CLI to interactively revert your project to a previous Git commit.",
+  "main": "index.js",
+  "bin": {
+    "reversion": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonvar/reversion.git"
+  },
+  "keywords": [
+    "git",
+    "cli",
+    "revert",
+    "commit",
+    "rollback",
+    "interactive",
+    "tool"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nonvar/reversion/issues"
+  },
+  "homepage": "https://github.com/nonvar/reversion#readme",
+  "dependencies": {
+    "inquirer": "^12.8.2",
+    "simple-git": "^3.28.0"
+  }
+}
