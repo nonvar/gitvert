@@ -211,7 +211,7 @@ async function createBackupBranch(currentHash) {
 }
 
 async function main() {
-  console.log('vergit — Interactive Git version navigator\n');
+  console.log('< vergit >\n');
 
   let stack = loadStack();
 
@@ -233,7 +233,7 @@ async function main() {
       });
 
       if (action === 'exit') {
-        console.log('Goodbye!');
+        console.log('< goodbye >');
         process.exit(0);
       }
 
