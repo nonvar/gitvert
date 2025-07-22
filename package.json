@@ -1,17 +1,17 @@
 {
-  "name": "reversion",
+  "name": "vergit",
   "version": "1.0.0",
-  "description": "A simple CLI to interactively revert your project to a previous Git commit.",
+  "description": "A simple CLI to interactively hop between Git commits — go back, forward, or select any version.",
   "main": "index.js",
   "bin": {
-    "reversion": "./index.js"
+    "vergit": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nonvar/reversion.git"
+    "url": "git+https://github.com/nonvar/vergit.git"
   },
   "keywords": [
     "git",
@@ -19,6 +19,9 @@
     "revert",
     "commit",
     "rollback",
+    "forward",
+    "version",
+    "history",
     "interactive",
     "tool"
   ],
@@ -26,9 +29,9 @@
   "license": "MIT",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/nonvar/reversion/issues"
+    "url": "https://github.com/nonvar/vergit/issues"
   },
-  "homepage": "https://github.com/nonvar/reversion#readme",
+  "homepage": "https://github.com/nonvar/vergit#readme",
   "dependencies": {
     "inquirer": "^12.8.2",
     "simple-git": "^3.28.0"
