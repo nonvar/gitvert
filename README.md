@@ -4,6 +4,8 @@
 
 <h1 align="center">&lt; vergit &gt;</vergit></h1>
 
+<h2 align="center">&lt; time machine for git &gt;</vergit></h2>
+
 `vergit` is an interactive CLI tool to help you navigate your Git commit history with ease. Undo, select, or pull the latest commits safely using a simple menu-driven interface.
 
 ---
@@ -54,5 +56,4 @@ Feel free to open issues or submit pull requests to improve vergit!
 
 ---
 
-<h1 align="center">&lt; happy versioning &gt;</vergit></h1>
-
+<h2 align="center">&lt; happy versioning &gt;</vergit></h2>
