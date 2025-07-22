@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="/vergit.png" alt="vergit logo" width="120" />
+  <img src="/gitvert.png" alt="gitvert logo" width="120" />
 </p>
 
-<h1 align="center">&lt; vergit &gt;</vergit></h1>
+<h1 align="center">&lt; gitvert &gt;</h1>
 
-<h2 align="center">&lt; time machine for git &gt;</vergit></h2>
+<h2 align="center">&lt; time machine for git &gt;</h2>
 
-`vergit` is an interactive CLI tool to help you navigate your Git commit history with ease. Undo, select, or pull the latest commits safely using a simple menu-driven interface.
+`gitvert` is an interactive CLI tool to help you navigate your Git commit history with ease. Undo, select, or pull the latest commits safely using a simple menu-driven interface.
 
 ---
 
@@ -22,11 +22,11 @@
 
 ## Installation (Local Testing)
 
-To install `vergit` locally for testing:
+To install `gitvert` locally for testing:
 
 ```bash
-git clone https://github.com/yourusername/vergit.git
-cd vergit
+git clone https://github.com/yourusername/gitvert.git
+cd gitvert
 npm install
 npm link
 ```
@@ -38,7 +38,7 @@ npm link
 On any project, run the command:
 
 ```
-vergit
+gitvert
 ```
 
 ---
@@ -52,8 +52,8 @@ vergit
 
 ## Contributing
 
-Feel free to open issues or submit pull requests to improve vergit!
+Feel free to open issues or submit pull requests to improve gitvert!
 
 ---
 
-<h2 align="center">&lt; happy versioning &gt;</vergit></h2>
+<h2 align="center">&lt; happy versioning &gt;</h2>
