@@ -1,37 +1,40 @@
 {
-  "name": "vergit",
+  "name": "gitvert",
   "version": "1.0.0",
-  "description": "A simple CLI to interactively hop between Git commits — go back, forward, or select any version.",
+  "description": "An interactive CLI to safely hop between Git commits — undo, redo, or select any version with confidence.",
   "main": "index.js",
   "bin": {
-    "vergit": "./index.js"
+    "gitvert": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nonvar/vergit.git"
+    "url": "git+https://github.com/nonvar/gitvert.git"
   },
   "keywords": [
     "git",
     "cli",
     "revert",
+    "undo",
+    "redo",
     "commit",
     "rollback",
     "forward",
     "version",
     "history",
     "interactive",
+    "safe",
     "tool"
   ],
   "author": "",
   "license": "MIT",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/nonvar/vergit/issues"
+    "url": "https://github.com/nonvar/gitvert/issues"
   },
-  "homepage": "https://github.com/nonvar/vergit#readme",
+  "homepage": "https://github.com/nonvar/gitvert#readme",
   "dependencies": {
     "inquirer": "^12.8.2",
     "simple-git": "^3.28.0"

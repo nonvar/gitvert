@@ -7,7 +7,7 @@ const path = require('path');
 const prompt = inquirer.default || inquirer;
 
 const git = simpleGit();
-const VERGIT_DIR = '.vergit';
+const GITVERT_DIR = '.gitvert';
 const STACK_FILE = 'stack.json';
 const MAX_STACK_SIZE = 20;
 
@@ -25,7 +25,7 @@ function getFormattedTimestamp() {
 }
 
 function getStackFilePath() {
-  const dir = path.join(process.cwd(), VERGIT_DIR);
+  const dir = path.join(process.cwd(), GITVERT_DIR);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   return path.join(dir, STACK_FILE);
 }
@@ -101,16 +101,16 @@ async function promptResetMode(hasUncommitted) {
   }
 }
 
-// Parse timestamp from branch name like "vergit-backup-2025-07-22_15-30-00"
+// Parse timestamp from branch name like "gitvert-backup-2025-07-22_15-30-00"
 function parseTimestamp(branchName) {
-  const prefix = 'vergit-backup-';
+  const prefix = 'gitvert-backup-';
   if (!branchName.startsWith(prefix)) return null;
   return branchName.slice(prefix.length);
 }
 
 async function listBackupBranches() {
   const branches = await git.branchLocal();
-  return branches.all.filter(name => name.startsWith('vergit-backup-'));
+  return branches.all.filter(name => name.startsWith('gitvert-backup-'));
 }
 
 async function showBackupsMenu() {
@@ -198,7 +198,7 @@ async function showBackupsMenu() {
 }
 
 async function createBackupBranch(currentHash) {
-  const backupBranch = `vergit-backup-${getFormattedTimestamp()}`;
+  const backupBranch = `gitvert-backup-${getFormattedTimestamp()}`;
   try {
     const branches = await git.branchLocal();
     if (!branches.all.includes(backupBranch)) {
@@ -211,7 +211,7 @@ async function createBackupBranch(currentHash) {
 }
 
 async function main() {
-  console.log('< vergit >\n');
+  console.log('< gitvert >\n');
 
   let stack = loadStack();
 
